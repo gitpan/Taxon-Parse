@@ -5,7 +5,7 @@ use warnings;
 
 use parent qw( Taxon::Parse );
 
-our $VERSION = 0.004;
+our $VERSION = 0.005;
 
 sub init {
   my $self = shift;
@@ -150,6 +150,10 @@ sub init {
       20\d\d      # 2000 .. 2099
     )
     (?:[a-hA-H])?
+    (?:
+      [\/-]
+      \d{2,4}
+    )?
   /xms;
   $p->{date} = qr/
     (?:
