@@ -8,7 +8,7 @@ use parent qw( Taxon::Parse );
 
 #use HTML::Entities;
 
-our $VERSION = 0.002;
+our $VERSION = 0.003;
 
 # decode_entities($a);
 # encode_entities($a, "\200-\377");
@@ -85,7 +85,7 @@ sub normalise {
   # capitalize all entire upper case words
   $string =~  s/$p->{NORM_UPPERCASE_WORDS}/ucfirst(lc($1)/eg;
    
-                $string =~ s/\s\s+/ /g;
+  $string =~ s/\s\s+/ /g;
                 $string =~ s/^\s//;
                 $string =~ s/\s$//;
                 

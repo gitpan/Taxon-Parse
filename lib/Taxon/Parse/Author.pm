@@ -5,7 +5,7 @@ use warnings;
 
 use parent qw( Taxon::Parse );
 
-our $VERSION = 0.002;
+our $VERSION = 0.003;
 
 sub init {
   my $self = shift;
@@ -205,6 +205,7 @@ sub init {
         p \.? \s* p \.?
         | non .*
         | nom\. \s* illeg\.
+        | nom\. \s* inval\.?
       )
       \s* \)?
     )?
@@ -232,6 +233,7 @@ sub init {
         p \.? \s* p \.?
         | non .*
         | nom\. \s* illeg\.
+        | nom\. \s* inval\.?
       )
       \s* \)?
     )?
