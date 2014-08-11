@@ -4,6 +4,7 @@ author:
   - 'Helmut Wollmersdorfer, <helmut.wollmersdorfer@gmail.com>'
 build_requires:
   Test::More: '0.88'
+  Test::More::UTF8: '0'
 configure_requires:
   Module::Build::Tiny: '0.036'
 dynamic_config: 0
@@ -27,6 +28,6 @@ resources:
   bugtracker: https://github.com/wollmers/Taxon-Parse/issues
   homepage: https://github.com/wollmers/Taxon-Parse
   repository: https://github.com/wollmers/Taxon-Parse.git
-version: '0.003'
+version: '0.004'
 x_contributors:
   - 'Helmut Wollmersdorfer <helmut@wollmersdorfer.at>'
