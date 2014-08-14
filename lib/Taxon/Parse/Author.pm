@@ -5,7 +5,7 @@ use warnings;
 
 use parent qw( Taxon::Parse );
 
-our $VERSION = 0.007;
+our $VERSION = 0.008;
 
 sub init {
   my $self = shift;
@@ -79,6 +79,7 @@ sub init {
         )?
       )
       | \b DC[\.]
+      | hort\. \s* (?: [\p{IsUpper}\p{IsLower}][\p{IsLower}]{0,9}[\.]? )?
     )
   /xms;
   $p->{abbreviated_name} = qr/
