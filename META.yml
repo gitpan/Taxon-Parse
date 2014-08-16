@@ -28,6 +28,6 @@ resources:
   bugtracker: https://github.com/wollmers/Taxon-Parse/issues
   homepage: https://github.com/wollmers/Taxon-Parse
   repository: https://github.com/wollmers/Taxon-Parse.git
-version: '0.009'
+version: '0.010'
 x_contributors:
   - 'Helmut Wollmersdorfer <helmut@wollmersdorfer.at>'

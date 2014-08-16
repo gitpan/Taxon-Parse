@@ -6,7 +6,7 @@ use utf8;
 
 use parent qw( Taxon::Parse );
 
-our $VERSION = 0.009;
+our $VERSION = 0.010;
 
 sub init {
   my $self = shift;
@@ -62,8 +62,11 @@ sub init {
   $p->{infragenus}  = qr/
     (?:
       $p->{bracketed}
-      | ser \. \s* $p->{group}
-      | subg \. \s* $p->{group}
+      | (?:
+      
+           (?: ser|subg|sect|trib ) 
+           \. \s* $p->{group}
+         )
     )
   /xms;
   
