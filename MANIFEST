@@ -13,6 +13,7 @@ lib/Taxon/Parse/Author.pm
 lib/Taxon/Parse/Normalize.pm
 lib/Taxon/Parse/Suffix.pm
 lib/Taxon/Parse/Taxon.pm
+t/parse.t
 t/parse_author.t
 t/parse_taxon.t
 t/release-pod-syntax.t
